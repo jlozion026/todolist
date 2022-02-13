@@ -226,35 +226,7 @@ Read Page is the one that that will retrieve / view the specific entries in our 
        </div>
     </div>
 ```
-## Creating the Create Page
-In this section we'll build the Add functionality of our TO DO LIST application.  This would consist of a function which we would call when we want to add another list. 
-```php
-<?php
 
-if(isset($_POST['title'])){
-    require 'connection.php';
-
-    $title = $_POST['title'];
-
-    if(empty($title)){
-        header("Location: index.php?mess=error");
-    }else {
-        $stmt = $conn->prepare("INSERT INTO todos(title) VALUE(?)");
-        $res = $stmt->execute([$title]);
-
-        if($res){
-            header("Location: index.php?mess=success"); 
-        }else {
-            header("Location: index.php");
-        }
-        $conn = null;
-        exit();
-    }
-}else {
-    header("Location: index.php?mess=error");
-}
-
-```
 ## Creating the Create Page
 In this section we created the `add.php` file of our TO DO LIST application. Once the add button was clicked, it will update the to-do-list section. It will be possible by linking the form to the `add.php` and will run the following code below.
 
