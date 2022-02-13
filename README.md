@@ -164,7 +164,7 @@ require 'connection.php';
 
 ## Creating Read Page
 
-Read Page is the one that that will retrieve / view the specific entries in our program. The Read page will represent as the face of the whole program. The data retrieved will be from the `todos` table
+Read Page is the one that that will retrieve / view the specific entries in our program. The Read page will represent as the face of the whole program. The data retrieved will be from the `todos` table. 
 
 ```php
 <body>
@@ -224,3 +224,32 @@ Read Page is the one that that will retrieve / view the specific entries in our 
        </div>
     </div>
 ```
+## Creating the Create Page
+In this section we'll build the Add functionality of our TO DO LIST application.  This would consist of a function which we would call when we want to add another list. 
+````php
+<?php
+
+if(isset($_POST['title'])){
+    require 'connection.php';
+
+    $title = $_POST['title'];
+
+    if(empty($title)){
+        header("Location: index.php?mess=error");
+    }else {
+        $stmt = $conn->prepare("INSERT INTO todos(title) VALUE(?)");
+        $res = $stmt->execute([$title]);
+
+        if($res){
+            header("Location: index.php?mess=success"); 
+        }else {
+            header("Location: index.php");
+        }
+        $conn = null;
+        exit();
+    }
+}else {
+    header("Location: index.php?mess=error");
+}
+
+````
