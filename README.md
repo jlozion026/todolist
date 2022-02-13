@@ -3,7 +3,7 @@
  
 # To Do List
 
-This project has basic function like adding task list. Displaying the task name, when it was created and a check box to indicate that the task is done. You can also update the task list created and you can also delte the task once done.
+This project has basic function like adding task list, displaying the task name, a check box to indicate that the task is done, and displays the time when it as created. You can also update the task list created and you can also delete the task once done.
 
 
 
