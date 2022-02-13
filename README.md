@@ -397,8 +397,43 @@ if(isset($_POST['id'])){
     header("Location: index.php?mess=error");
 }
 ```
+## Creating Checking Page
+We also added a check function wherein you can click check to cross out the created task. We created the `check.php` file to choose the specific task to be crossed out. The following code below shows the data how to check and uncheck the task created.
 
+```php
+<?php
 
+if(isset($_POST['id'])){
+    require 'connection.php';
 
+    $id = $_POST['id'];
+
+    if(empty($id)){
+       echo 'error';
+    }else {
+        $todos = $conn->prepare("SELECT id, checked FROM todos WHERE id=?");
+        $todos->execute([$id]);
+
+        $todo = $todos->fetch();
+        $uId = $todo['id'];
+        $checked = $todo['checked'];
+
+        $uChecked = $checked ? 0 : 1;
+
+        $res = $conn->query("UPDATE todos SET checked=$uChecked WHERE id=$uId");
+
+        if($res){
+            echo $checked;
+        }else {
+            echo "error";
+        }
+        $conn = null;
+        exit();
+    }
+}else {
+    header("Location: index.php?mess=error");
+}
+
+```
 
 
