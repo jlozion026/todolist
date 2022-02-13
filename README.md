@@ -162,6 +162,7 @@ require 'connection.php';
 </body>
 </html>
 ```
+![image](https://user-images.githubusercontent.com/82523427/153747200-f36e35cb-807b-401c-863b-ca3f56f4b900.png)
 
 ## Creating Read Page
 
