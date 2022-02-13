@@ -50,7 +50,10 @@ Note: Before testing this code, replace the credentials with your MySQL server's
 
 Landing Page shows the index page or the first page of the Web Application. It display the Input text, add button and different todo-items recorded in the database table.
 It also has action icons for each todo-item, which allow you to edit, delete, check and uncheck.
-```php
+
+<details> 
+  <summary>Q1: What is the best Language in the World? </summary>
+   ```php
 <?php 
 require 'connection.php';
 ?>
@@ -160,4 +163,4 @@ require 'connection.php';
     </script>
 </body>
 </html>
-```
+```</details>
