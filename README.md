@@ -229,6 +229,8 @@ Read Page is the one that that will retrieve / view the specific entries in our 
 
 ## Creating the Create Page
 In this section we created the `add.php` file of our TO DO LIST application. Once the add button was clicked, it will update the to-do-list section. It will be possible by linking the form to the `add.php` and will run the following code below.
+![image](https://user-images.githubusercontent.com/82523427/153747688-7c269353-9a60-4f0c-94cd-805ea53e0963.png) 
+![image](https://user-images.githubusercontent.com/82523427/153747728-5bd04339-b679-4cc1-afb8-1fcb3c6ef11b.png)
 
 ```php
 <?php
