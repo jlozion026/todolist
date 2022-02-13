@@ -30,16 +30,23 @@ We'll use the PHP `require` function to include this config file on other pages 
 
 ```php
 <?php 
- $sName = "localhost";
- $uName = "root";
- $pass = "";
- $db_name = "to_do_list";
+$sName = "localhost";
+$uName = "root";
+$pass = "";
+$db_name = "to_do_list";
  
 try {
-  $conn = new PDO("mysql:host=$sName;dbname=$db_name", $uName, $pass);
-  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
- }catch(PDOException $e){
+    $conn = new PDO("mysql:host=$sName;dbname=$db_name", 
+                    $uName, $pass);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+}catch(PDOException $e){
   echo "Connection failed : ". $e->getMessage();
- }
+}
 
 ```
+Note: Before testing this code, replace the credentials with your MySQL server's settings, for example, replace the database name `'to_do_list'` with your own database name, username `'root'` with your own database username, and specify a database password if one exists.
+
+## Creating the Landing Page 
+
+Landing Page shows the index page or the first page of the Web Application. It display the Input text, add button and different todo-items recorded in the database table.
+It also has action icons for each todo-item, which allow you to edit, delete, check and uncheck.
