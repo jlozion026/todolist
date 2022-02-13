@@ -47,8 +47,11 @@ Note: Before testing this code, replace the credentials with your MySQL server's
 
 ## Creating the Landing Page 
 
-Landing Page shows the index page or the first page of the Web Application. It display the Input text, add button and different todo-items recorded in the database table.
+Landing Page shows the index page or the first page of the Web Application. It display the Input text, add button, and different todo-items recorded in the database table.
 It also has action icons for each todo-item, which allow you to edit, delete, check and uncheck.
+
+![image](https://user-images.githubusercontent.com/82523427/153747200-f36e35cb-807b-401c-863b-ca3f56f4b900.png)
+
 ```php
 <?php 
 require 'connection.php';
@@ -160,7 +163,6 @@ require 'connection.php';
 </body>
 </html>
 ```
-![image](https://user-images.githubusercontent.com/82523427/153747200-f36e35cb-807b-401c-863b-ca3f56f4b900.png)
 
 ## Creating Read Page
 
