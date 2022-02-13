@@ -353,6 +353,7 @@ if(isset($_POST['update-btn']))
 
 ## Creating the Delete page
 We created the delete function by creating the `remove.php`. Once the x button clicked, it will go to the `remove.php`and it will automatically delete the created list.
+
 ![image](https://user-images.githubusercontent.com/82523427/153748169-fbbb2baa-9864-4c21-823e-e19644406409.png)
 ![image](https://user-images.githubusercontent.com/82523427/153748206-7341724c-5e7d-4549-b655-11fb18f97a61.png)
 ```php
