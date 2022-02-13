@@ -19,4 +19,3 @@ CREATE TABLE employees (
     salary INT(10) NOT NULL
 );
 ```
-![image](https://user-images.githubusercontent.com/82523427/153744043-d67f1295-d5d5-4dc8-9a2b-153cb1aa895a.png)
