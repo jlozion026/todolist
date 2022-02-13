@@ -5,11 +5,9 @@
 
 This project has basic function like adding task list, displaying the task name, a check box to indicate that the task is done, and displays the time when it as created. You can also update the task list created and you can also delete the task once done.
 
-
-
 ## Creating the Database and Table
 
-Create the `database` and name it `to_do_list`. Create then a table that has name `todos` and inside the parenthesis, make sure to use the following command below. 
+Create the `database` and name it `to_do_list`. Create then a table that has name `todos`. You can make use of the following command below. 
 
 ~~~sql
 CREATE DATABASE to_do_list;
