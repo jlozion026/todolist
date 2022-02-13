@@ -226,7 +226,7 @@ Read Page is the one that that will retrieve / view the specific entries in our 
 ```
 ## Creating the Create Page
 In this section we'll build the Add functionality of our TO DO LIST application.  This would consist of a function which we would call when we want to add another list. 
-````php
+```php
 <?php
 
 if(isset($_POST['title'])){
@@ -252,4 +252,4 @@ if(isset($_POST['title'])){
     header("Location: index.php?mess=error");
 }
 
-````
+```
