@@ -161,4 +161,7 @@ require 'connection.php';
 </body>
 </html>
 ```
-![image](https://user-images.githubusercontent.com/82523427/153745981-885ec931-96c3-4877-8d19-f494c9b4e61e.png)
+
+## Creating Read Page
+
+Read Page is the one that that will retrieve / view the specific entries in our program. The Read page will represent as the face of the whole program. The data retrieved will be from the `todos` table
