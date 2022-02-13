@@ -261,6 +261,9 @@ if(isset($_POST['title'])){
 ```
 ## Creating the Update Page
 We created the edit function by creating the `edit.php`. Once the edit button clicked, you will proceed to a new page or form that has the task you want to edit. 
+![image](https://user-images.githubusercontent.com/82523427/153747771-191ed4a5-255e-4ab2-9b21-50901293007d.png)
+![image](https://user-images.githubusercontent.com/82523427/153747837-10022eb7-3426-41ff-b393-1265a6393f0b.png)
+![image](https://user-images.githubusercontent.com/82523427/153747860-5340e6d2-e104-4f1e-930d-186b37cf343e.png)
 ```php
   <?php
 
@@ -301,9 +304,9 @@ We created the edit function by creating the `edit.php`. Once the edit button cl
        </div>
 </body>
 </html>
-
-```php
+```
 After editing, click the edit button and it will go to the `code.php` and execute the edit function and update.
+![image](https://user-images.githubusercontent.com/82523427/153747886-fd81983f-47df-405b-89b7-8188931edcf7.png)
 
 ```php
 <?php
