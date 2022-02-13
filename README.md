@@ -264,6 +264,7 @@ We created the edit function by creating the `edit.php`. Once the edit button cl
 
 
 ![image](https://user-images.githubusercontent.com/82523427/153747771-191ed4a5-255e-4ab2-9b21-50901293007d.png)
+
 ![image](https://user-images.githubusercontent.com/82523427/153747837-10022eb7-3426-41ff-b393-1265a6393f0b.png)
 
 ![image](https://user-images.githubusercontent.com/82523427/153747860-5340e6d2-e104-4f1e-930d-186b37cf343e.png)
